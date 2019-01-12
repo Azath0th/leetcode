@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+var reverse = function (x) {
   let flag = false
   if (x < 0) {
     x = -x
@@ -12,4 +12,4 @@ var reverse = function(x) {
   flag && (result = '-' + result)
   result = parseInt(result)
   return (result < -2147483648 || result > 2147483647) ? 0 : result
-};
+}

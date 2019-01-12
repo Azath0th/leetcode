@@ -8,4 +8,4 @@ var sortArrayByParity = function(A) {
       element % 2 === 0 ? result.unshift(element) : result.push(element)
   })
   return result
-};
+}

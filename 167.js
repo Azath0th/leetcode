@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(numbers, target) {
+var twoSum = function (numbers, target) {
   let obj = {}
   for (let i = 0; i < numbers.length; i++) {
     const diff = target - numbers[i]
@@ -13,4 +13,4 @@ var twoSum = function(numbers, target) {
     obj[numbers[i]] = i + 1
   }
   return []
-};
+}
