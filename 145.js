@@ -13,5 +13,13 @@ var postorderTraversal = function(root) {
   if (!root) {
     return []
   }
-  return postorderTraversal(root.left).concat(postorderTraversal(root.right)).concat(root.val)
+  const stack = [root]
+  const result = []
+  while (stack.length) {
+    const node = stack.pop()
+    node.left && stack.push(node.left)
+    node.right && stack.push(node.right)
+    result.push(node.val)
+  }
+  return result.reverse()
 }
