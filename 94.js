@@ -19,7 +19,7 @@ var inorderTraversal = function(root) {
     while (root) {
       stack.push(root)
       root = root.left
-    }s
+    }
     const node = stack.pop()
     result.push(node.val)
     root = node.right
